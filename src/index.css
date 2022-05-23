@@ -7,11 +7,76 @@
 body {
   margin: 0;
   font-family: "Open sans", sans-serif;
+  background: #f7f7f7;
 }
 
-#container {
+.container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.photo {
+  width: 50%;
+  position: relative;
+}
+
+.photo__img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.photo__caption {
+  position: absolute;
+  bottom: 75px;
+  left: 215px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #9b9c9c;
+}
+
+.form {
   width: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 50px;
+}
+
+.form__label {
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+}
+
+.form__input {
+  width: 450px;
+  height: 35px;
+  border: 1px solid #e3e8ee;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.form__submit {
+  width: 250px;
+  height: 40px;
+  background-color: #35abe2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form__errors {
+  font-size: 12px;
+  color: red;
+  padding: 2px;
 }
